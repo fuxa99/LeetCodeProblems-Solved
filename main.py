@@ -1,13 +1,11 @@
 from easy import *
 
-## two sum
-print("===== two Sum =====")
+print("===== Two sum =====")
 input = [2,3,5,7,11,15,16,20,30,32,40]
 target = [9,47,41,26]
 for i in range(len(target)):
   print(f"For target: {target[i]} => " + str(twoSum(input, target[i])))
 
-## power of 3
 print("===== Power of 3 =====")
 input = [27, 3, 0, 9, 15]
 for i in input:
