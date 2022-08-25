@@ -34,3 +34,19 @@ def romanToInt(s: str) -> int:
       else:
         value += symbols[symbols.index(s[i]) + 1]
   return(value)
+
+def longestCommonPrefix(strs: list) -> str:
+  if strs[0] == "":
+    return ""
+  if len(strs) < 2:
+    return strs[0]
+  run = True
+  pref_len = 0
+  result = min(strs, key=len)
+  for i in range(len(result)):
+    for j in range(len(strs)-1):
+      if strs[0][i] != strs[j+1][i]:
+        run = False
+    if run:
+      pref_len += 1
+  return strs[0][:pref_len]

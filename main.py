@@ -20,3 +20,7 @@ print("===== Roman to Integer v1 =====")
 input = ["III","IV","IX","MCMXCIV"]
 for i in input:  
   print(f"For number: {i} => " + str(romanToInt(i)))
+
+print("===== Longest Common Prefix =====") 
+input = ["heaaaa","heh","hey","hello"]
+print(f"For input: => " + str(longestCommonPrefix(input)))
